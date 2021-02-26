@@ -66,7 +66,48 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //         maior = numbers[i];
 //     }
 // }
-// console.log(maior);
+
 
 //6
 
+// let resultado = 0;
+
+// for (index = 0; index < numbers.length; index += 1){
+//     if (numbers[index] % 2 !== 0) {
+//         impar = numbers[index];
+//         resultado += 1;    
+//     }
+// }
+// if ( resultado === 0){
+//     console.log('nenhum valor ímpar encontrado')
+// } else {
+    
+//     console.log(resultado);
+// }
+
+//7
+// let menor = maior;
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] < menor) {
+//          menor = numbers[i];
+//     }
+// }
+// console.log(menor);
+
+//8
+// let resultado = [];
+// let quantidade = 25; 
+
+// for (let index = 1; index <= quantidade; index += 1){
+//     resultado.push(index);
+// }
+// console.log(resultado)
+
+// 9
+// let resultadoDivisao = [];
+
+// for (let indexD = 0; indexD <= resultado.length -1; indexD += 1){
+//     resultadoDivisao.push(resultado[indexD] / 2);
+// }
+// console.log(resultadoDivisao)
