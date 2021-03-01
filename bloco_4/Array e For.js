@@ -110,3 +110,13 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //     resultadoDivisao.push(resultado[indexD] / 2);
 // }
 // console.log(resultadoDivisao)
+
+// Função
+// let a = 5;
+// let b = 2;
+
+// function sum(a, b) {
+//     return a + b;
+//   }
+
+//   console.log(sum(10, 5))
