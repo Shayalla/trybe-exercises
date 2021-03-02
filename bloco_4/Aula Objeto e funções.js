@@ -1,3 +1,4 @@
+//Objeto
 // let player = {
 //     name: 'Marta',
 //     lastName: 'Silva',
@@ -13,18 +14,21 @@
 
 // console.log('A jogadora possui ' + player.medals.golden + ' medalhas de ouro e ' + player.medals.silver + ' medalhas de prata');
 
-let cars = ["Saab", "Volvo", "BMW"];
 
-for (let i in cars) {
-  console.log(cars[i]);
-}
+//FOR/IN
+// let cars = ["Saab", "Volvo", "BMW"];
 
-let car = {
-    type: "Fiat",
-    model: "500",
-    color: "white",
-  };
+// for (let i in cars) {
+//   console.log(cars[i]);
+// }
+
+// let car = {
+//     type: "Fiat",
+//     model: "500",
+//     color: "white",
+//   };
   
-  for (let i in car) {
-    console.log(i, car[i]);
-  }
+//   for (let i in car) {
+//     console.log(i, car[i]);
+//   }
+
