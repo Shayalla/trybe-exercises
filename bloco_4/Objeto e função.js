@@ -145,11 +145,11 @@
 
 // console.log(somarAte(5));
 
-//Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
+// Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
 
 // function verificaPalavra(word, endingWord) {
 //   let resultado = word.endsWith(endingWord);
 //   return resultado;
 // }
 
-// console.log(verificaPalavra('Trybe', 'be'));
+// // console.log(verificaPalavra('Trybe', 'be'));
