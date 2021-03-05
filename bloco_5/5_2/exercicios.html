@@ -94,6 +94,26 @@
         let h3 = document.createElement('h3');
         document.body.querySelector('.main-content').appendChild(h3)
       }
+      //--------------------------------------------------------
+      //exercicios part 2
+      //1.Adicione a classe title na tag h1 criada;
+      document.body.querySelector('h1').className = 'title';
+      //2.Adicione a classe description nas 3 tags h3 criadas;
+      let h3s = document.body.querySelectorAll('h3');
+
+      for (let indexH3 = 0; indexH3 < h3s.length; indexH3 += 1){
+        h3s[indexH3].className = 'description';
+      }
+      //3.Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+      document.body.querySelector('.main-content').removeChild(document.body.querySelector('.left-content'));
+      //4.Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+      document.body.querySelector('.right-content').style.marginRight = 'auto';
+      //5.Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+      document.body.querySelector('div').style.backgroundColor = 'green';
+      //6.Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+      for (let index = 0; index < 2; index += 1){
+        document.body.querySelector('ul').lastChild.remove();
+      }
     </script>
   </body>
 </html>
