@@ -30,7 +30,6 @@ function colocaEstados() {
   ];
   const select = document.querySelector("#estados");
   for (let index = 0; index < estados.length; index += 1) {
-    // let state = estados[index];
     const opcoes = document.createElement("option");
     opcoes.innerHTML = estados[index]
     opcoes.value = estados[index];
@@ -39,3 +38,24 @@ function colocaEstados() {
 }
 
 colocaEstados();
+
+//peguei essa função do:https://www.linhadecomando.com/javascript/javascript-funcao-para-verificar-se-valor-digitado-e-um-numero
+function verificaCPF() {
+    const textoCPF = document.querySelector('#cpf');
+    textoCPF.addEventListener('keypress', function (){
+        checaNumero(this.value);
+    })
+}
+
+verificaCPF();
+
+function checaNumero(valor){
+    let regra = /^[0-9]+$/;
+    if (valor !== 0){
+        if (valor.match(regra)) {
+            console.log('é numero');
+        }else {
+            alert("Permitido somente número");
+        }
+    }
+  }    
