@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <title class='title'>Exercicios</title>
+</head>
+<body>
+    <form action="" method="get">
+            <h1 class='title'>Dados Pessoais</h1>
+        <label class='label' for="nome">Nome:
+            <input class='input' type="text" maxlength='50' id='nome' name='nome' required>
+        </label>
+        <br><br>
+        <label class='label' for="email">Email: 
+            <input class='input' type="email" name="email" id="email" maxlength='50'required>
+        </label>
+        <br><br>
+        <label class='label' for="cpf">CPF: 
+            <input class='input' type="text" name="cpf" id="cpf" maxlength='11' required autocomplete='off'> <span class='help'>(somente números)</span> 
+        </label>
+        <br><br>
+        <label class='label' for="endereco">Endereço: 
+            <input class='input' type="text" maxlength='200' id='endereco' name='endereco' required>
+        </label>
+        <br><br>
+        <label class='label' for="cidade">Cidade: 
+            <input class='input' type="text" name='cidade' id='cidade' maxlength='28' required>
+        </label>
+        <br><br>
+        <label class='label' for="estados">Estado: 
+        </label>
+            <div class='select is-rounded'>
+                <select class='dropdown-item' name="estados" id="estados">
+                </select>
+            </div>
+        <br><br>
+        <p>Tipo:</p>
+        <label class='label' for="casa"> 
+            <input  type="radio" class='radio' name="tipo-moradia" id="casa" value='casa' checked>Casa
+        </label>
+        <label class='label' for="apartamento">
+            <input  type="radio" class='radio' name="tipo-moradia" id="apartamento">Apartamento
+        </label>
+    </fieldset>
+    <br>
+    <fieldset class='content'>
+        <legend class='title'>Currículo:</legend>
+        <label class='label' for="resumo"> Resumo do Curriculo:
+            <textarea class='textarea' name="resumo-curriculo" id="resumo" cols="40" rows="10" maxlength='1000'required></textarea>
+        </label>
+        <br><br>
+        <label class='label' for="cargo1">Cargo:
+            <input class='input'type="text" maxlength='40' name='cargo1' id='cargo1' required>
+        </label>
+        <br><br>
+        <label class='label' for="descricao-cargo">Descrição:
+            <input class='input'type="text" maxlength='500' id='descricao-cargo' name='descricao-cargo' required>
+        </label>
+        <br><br>
+        <label class='label' for="datepicker">Data de Inicio:
+            <input class='input'type="text" name="data-inicio" id="datepicker" required>
+        </label>
+    </fieldset>
+    <div id='form-data'>
+
+    </div>
+    <br>
+    <button class='button is-success is-rounded' type="submit" id='botao-enviar'>Enviar</button>
+    <button class='button is-danger is-rounded' type="reset">Apagar</button>
+    </form>
+    
+<script src="script.js"></script>
+<script  src='node_modules2/pikaday.js'> </script> 
+</body>
+</html>
