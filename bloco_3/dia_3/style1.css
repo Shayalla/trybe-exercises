@@ -1,0 +1,40 @@
+/* .distancia{
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+} */
+
+.super-mario{
+    width: 100px;
+}
+
+.goomba{
+    width: 70px;
+    ;
+    margin-right: 100px;
+}
+
+.word{
+    width: 150px;
+    position: absolute;
+    top: 90px;
+    left: 230px;
+    z-index: 2;
+}
+
+.bowser{
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+.baloon{
+    width: 150px;
+    top: 90px;
+    left: 200px;
+    position: absolute;
+    z-index: 1;
+}
