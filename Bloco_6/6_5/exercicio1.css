@@ -1,0 +1,32 @@
+body {
+    font-size: xx-large;
+    margin: 30px;
+}
+h1 {
+    font-size: x-large;
+}
+h2 {
+    font-size: x-large;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 100px 0;
+}
+
+@media screen and (min-width: 520px){
+    body { 
+        background-color: pink;
+    }
+    img {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: xxx-large;
+    }
+
+}

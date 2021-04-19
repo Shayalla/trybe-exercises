@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  .example {
+  	background-color: blue;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .example {
+  	background-color: red;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .div-container {
+  	display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+}
+</style>
+</head>
+<body>
+
+<h2>Change the appearance of DIV on different screen sizes</h2>
+
+<div class="div-container">
+	<div class="example">Example DIV.</div>
+	<div class="example">Example DIV .</div>
+</div>
+
+<p>When the browser's width is between 600 and 900px, change the appearance of DIV. 
+<strong>Resize the browser window to see the effect</strong>.</p>
+
+</body>
+</html>
