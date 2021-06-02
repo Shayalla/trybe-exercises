@@ -5,7 +5,7 @@ export class ClientesCadastrados extends Component {
   render() {
     return (
       <div>   
-        {/* <p>Nenhum cliente cadastrado</p> */}
+        <p>Nenhum cliente cadastrado</p>
         <Link to='/cadastrocliente'>Cadastrar cliente</Link>
       </div>
     )
