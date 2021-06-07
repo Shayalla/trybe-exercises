@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { addClients } from '../actions'
 
 export class CadastroClientes extends Component {
@@ -37,6 +38,7 @@ export class CadastroClientes extends Component {
         </label>
         <br/>
         <button onClick={ () => submit(this.state) }>Cadastro</button>
+        <Link to="/clientescadastrados">Clientes Cadastrados</Link>
       </div>
     )
   }
