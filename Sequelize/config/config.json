@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "jessie",
+    "password": "Inuyasha91%",
+    "database": "associations",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "jessie",
+    "password": "Inuyasha91%",
+    "database": "associations",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "jessie",
+    "password": "Inuyasha91%",
+    "database": "associations",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
