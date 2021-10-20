@@ -41,5 +41,6 @@ module.exports = {
 //  npx sequelize migration:generate --name create-addresses
 // references.model : Indica qual tabela nossa FK está referenciando.
 // references.key : Indica qual coluna da tabela estrangeira deve ser utilizada para nossa foreign key .
-// onUpdate e onDelete : Configura o que deve acontecer ao atualizar ou excluir um usuário. Nesse caso, todos os produtos daquele usuário serão alterados ou excluídos.
+// onUpdate e onDelete : Configura o que deve acontecer ao atualizar ou excluir um usuário. Nesse caso, todos os 
+// produtos daquele usuário serão alterados ou excluídos.
 // depois de tudo, para criar:  npx sequelize db:migrate
