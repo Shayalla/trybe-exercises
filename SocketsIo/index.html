@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO - Trybe</title>
+  </head>
+  <body>
+    <button id='pingButton'>PING</button>
+    <ul id='messages'></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      const button = document.querySelector('#pingButton');
+
+      button.addEventListener('click', (e) => {
+        socket.emit('ping');
+        return false;
+      });
+    //   Caso você queira se conectar a um servidor num socket específico, 
+    // basta você informar isso via parâmetro, por exemplo: 
+    // const socket = io('http://localhost:5000') .
+    const createMessage = (message) => {
+        const messagesUl = document.querySelector('#messages');
+        const li = document.createElement('li');
+        li.innerText = message;
+        messagesUl.appendChild(li);
+      }
+
+      // Quando nosso evento `ola` for emitido, vamos pegar a string mensagem enviada pelo nosso evento e passar para a função `createMessage`
+      socket.on('ola', (mensagem) => createMessage(mensagem));
+       // Quando o evento `pong` for emitido pelo servidor, vamos pegar a string mensagem enviada e passar para a função `createMessage`
+    socket.on('pong', (mensagem) => createMessage(mensagem));
+    </script>
+  </body>
+</html>
